@@ -14,13 +14,13 @@ KIP's Technical Primer
         - [TDU - Total Digital Utility](#tdu---total-digital-utility)
         - [Transaction lifecycle](#transaction-lifecycle)
         - [Block characterization](#block-characterization)
-    - [Development Model](#development-model)
+    - [Development environment](#development-environment)
         - [KIDE - Krama Integrated Development Environment](#kide---krama-integrated-development-environment)
         - [Krama Services](#krama-services)
-    - [Execution model](#execution-model)
+    - [Execution environment](#execution-environment)
         - [JUG - The EVM++](#jug---the-evm)
         - [DEX - Decentralized Exchange](#dex---decentralized-exchange)
-        - [Platform fee overview](#platform-fee-overview)
+        - [Platform fee & incentivization](#platform-fee-incentivization)
     - [KFS - Krama File System](#kfs---krama-file-system)
         - [Big Data Persistence](#big-data-persistence)
         - [Sharding](#sharding)
@@ -55,19 +55,19 @@ KIP's Technical Primer
 
 ### Block characterization
 
-## Development Model
+## Development environment
 
 ### KIDE - Krama Integrated Development Environment
 
-### Krama Services 
+### Krama Services
 
-## Execution model
+## Execution environment
 
 ### JUG - The EVM++
 
 ### DEX - Decentralized Exchange
 
-### Platform fee overview
+### Platform fee & incentivization
 
 ## KFS - Krama File System
 
