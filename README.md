@@ -6,7 +6,7 @@ This is the official repository for all sorts of KIP documentation.
 
 ## Contents
 
-[Whitepaper](): Business-case related overview on the protocol with neutral comparison.
+[Whitepaper](/pages/white-paper/Whitepaper.md): Business-case related overview on the protocol with neutral comparison.
 
 [Technical Primer](): Well explained technicalities of KIP & underlying components.
 
