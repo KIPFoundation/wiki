@@ -1,50 +1,57 @@
-# KIP Whitepaper
+<h1 style="text-align:center">Krama Intelligent Protocol (KIP) Whitepaper</h1>
+
+![Krama Intelligent Protocol - Logo](/images/logo.png)
+
+<h3 style="text-align:center">WORKING DRAFT</h3>
+<!-- <p style="text-align:center">by</p> -->
+<p style="text-align:center">Anantha Krishnan <br/> Ganesh Prasad Kumble</p>
+<h4 style="text-align:center">KIP FOUNDATION</h4>
+<p style="text-align:center"><a href="mailto:dev@kip.foundation">dev@kip.foundation</a></p>
 
 **TABLE OF CONTENTS**
-- [KIP Whitepaper](#kip-whitepaper)
-    - [Blockchain landscape](#blockchain-landscape)
-        - [Background](#background)
-        - [Introduction](#introduction)
-    - [Krama - The new digital order](#krama---the-new-digital-order)
-        - [KIP: The Gen3 Blockchain Technology](#kip-the-gen3-blockchain-technology)
-        - [System Overview](#system-overview)
-            - [KIP Wallet Account State](#kip-wallet-account-state)
-            - [K2K Interaction state transition](#k2k-interaction-state-transition)
-            - [T2T Interaction state transition](#t2t-interaction-state-transition)
-            - [U2U Interaction state transition](#u2u-interaction-state-transition)
-            - [T2K / K2T Interaction state transition](#t2k-k2t-interaction-state-transition)
-            - [K2U / U2K Interaction state transition](#k2u-u2k-interaction-state-transition)
-            - [T2U / U2T Interaction state transition](#t2u-u2t-interaction-state-transition)
-    - [Beyond blockchain](#beyond-blockchain)
-        - [Architectural renaissance](#architectural-renaissance)
-            - [TDU](#tdu)
-            - [Big Data & Cognition](#big-data-cognition)
-            - [Scalability](#scalability)
-            - [Throughput](#throughput)
-            - [Predictable TCO & Finality](#predictable-tco-finality)
-        - [Distributed Marketplace](#distributed-marketplace)
-        - [Token economy & DEX](#token-economy-dex)
-    - [Enterprise adoption](#enterprise-adoption)
-        - [Solution models](#solution-models)
-        - [Financial models](#financial-models)
-        - [Governance models](#governance-models)
-    - [Conclusion](#conclusion)
-    - [References](#references)
-    - [Further Reading](#further-reading)
+  - [Blockchain landscape](#blockchain-landscape)
+    - [Background](#background)
+    - [Introduction](#introduction)
+      - [What is KIP ?](#what-is-kip)
+      - [Why KIP ?](#why-kip)
+  - [Krama - The new digital order](#krama---the-new-digital-order)
+    - [Enter KIP](#enter-kip)
+    - [System Overview](#system-overview)
+      - [KIP Wallet Account State](#kip-wallet-account-state)
+      - [K2K Interaction state transition](#k2k-interaction-state-transition)
+      - [T2T Interaction state transition](#t2t-interaction-state-transition)
+      - [U2U Interaction state transition](#u2u-interaction-state-transition)
+      - [T2K / K2T Interaction state transition](#t2k-k2t-interaction-state-transition)
+      - [K2U / U2K Interaction state transition](#k2u-u2k-interaction-state-transition)
+      - [T2U / U2T Interaction state transition](#t2u-u2t-interaction-state-transition)
+  - [Beyond blockchain](#beyond-blockchain)
+    - [Architectural renaissance](#architectural-renaissance)
+      - [TDU](#tdu)
+      - [Big Data & Cognition](#big-data-cognition)
+      - [Scalability](#scalability)
+      - [Throughput](#throughput)
+      - [Predictable TCO & Finality](#predictable-tco-finality)
+    - [Distributed Marketplace](#distributed-marketplace)
+    - [Token economy & DEX](#token-economy-dex)
+  - [Enterprise adoption](#enterprise-adoption)
+    - [Solution models](#solution-models)
+    - [Financial models](#financial-models)
+    - [Governance models](#governance-models)
+  - [Conclusion](#conclusion)
+  - [References](#references)
+  - [Further Reading](#further-reading)
 
 ## Blockchain landscape
-
-<!-- ![Digital Ages](../../images/era.png) -->
 
 ### Background
 
 Evolution of business and its underlying processes always encourage technological advancement in computation & storage. This has led the world to roll through significant leaps in technology & the way its perceived globally.
 
-It all started with the computing era in late 50’s and the early 60’s when computers were being used to process mathematical and scientific calculations to improve speed and accuracy. Data was moved from papers to disks and tapes. Traditional business processes were transformed by the help of computers resulting in increased efficiency. Computers increased the productivity of companies by several folds. A lot of companies started in this era wrote software to help businesses and then licensed these software to end users. The unit of value in this computing era was the ‘Product’ and the underlying technology played a very supportive role, although early in its existence. 
+It all started with the computing era in late 50’s and the early 60’s when computers were being used to process mathematical and scientific calculations to improve speed and accuracy. Data was moved from papers to disks and tapes. Traditional business processes were transformed by the help of computers resulting in increased efficiency. Computers increased the productivity of companies by several folds. A lot of companies started in this era wrote software to help businesses and then licensed these software to end users. The unit of value in this computing era was the ‘Product’ and the underlying technology played a very supportive role, although early in its existence.
 
-The introduction of TCP/IP to the world proved to be the fusion of the _"Information Era"_ with the _"Augmentation Era"_, both at individual and institutional levels. TCP/IP allowed the flattening of the world. Anybody with a computer could be connected to other computers around the world and it created an immense opportunity to host services to interact and exchange information with each other. New value driven models moved from being 'product-centric' to 'customer-centric'. The success of most companies was directly proportional to the number of customers the company served. Search engine companies occupied mainstream spotlight as they had the best number of customers using their services. Lots of other start-ups like Amazon, Facebook, Airbnb and Uber were born that leveraged the power of internet to discover & propagate business-driven network effects. But such intermediaries and aggregators influenced everything in the market dynamics as most of the core components driving these models were centralized in the form of entities, both at business and technology levels. 
+The introduction of TCP/IP to the world proved to be the fusion of the _"Information Era"_ with the _"Augmentation Era"_, both at individual and institutional levels. TCP/IP allowed the flattening of the world. Anybody with a computer could be connected to other computers around the world and it created an immense opportunity to host services to interact and exchange information with each other. New value driven models moved from being 'product-centric' to 'customer-centric'. The success of most companies was directly proportional to the number of customers the company served. Search engine companies occupied mainstream spotlight as they had the best number of customers using their services. Lots of other start-ups like Amazon, Facebook, Airbnb and Uber were born that leveraged the power of internet to discover & propagate business-driven network effects. But such intermediaries and aggregators influenced everything in the market dynamics as most of the core components driving these models were centralized in the form of entities, both at business and technology levels.
 
-From the _"Information Era"_ where everything is centralised, the world has been moving on to an age where critical components are being decentralised. In contrast to the key driver as 'data' in _"Augmented Era"_, 'Interaction' is the key to driving new values in the hyper connected digital world. Blockchain is the new technological institution that will fundamentally change how we discover, generate & exchange values. 
+From the _"Information Era"_ where everything is centralised, the world has been moving on to an age where critical components are being decentralised. In contrast to the key driver as 'data' in _"Augmented Era"_, 'Interaction' is the key to driving new values in the hyper connected digital world. Blockchain is the new technological institution that will fundamentally change how we discover, generate & exchange values.
 
 With an inherent nature of insecurity, humans always depended upon trusted intermediaries to lower uncertainty in exchanging values. With the implementation of blockchain technology, we may be able to reduce the dependency on traditional institutions like banks, corporations and governments to reduce uncertainty and exchange value in the digital world. Several blockchain platforms & technologies have been able to find partial success in disintermediating the incumbents that failed to operate better under ethical & performance grounds.
 
@@ -66,14 +73,37 @@ With an inherent nature of insecurity, humans always depended upon trusted inter
 
   ![Ethereum State Transition](/images/whitepaper/ethereum-statetransition.png)
   <p style="text-align:center"> <b>Fig 3:</b> Ethereum State Transition <sup><a href="#references">[2]</a></sup></p>
-  
-  Before mining, Ethereum transactions are validated by several factors including signature, balance, sender's nonce count, enogh gas balance, & validity of receiving account.
+
+  Before mining, Ethereum transactions are validated by several factors including signature, balance, sender's nonce count, enough gas balance, & validity of receiving account.
 
 ### Introduction
 
-K.I.P. stands for Krama Intelligence Protocol. KIP is the Gen3 business-ready Blockchain technology, with multi-dimensional value persistence for digital interactions; ably supported by modulated trust and reliable source of cognition.
+#### What is KIP ?
 
-We are in a digitally connected world where constant interactions are creating networks that have a personality resembling real world human networks. KIP is essentially a cooperative digital mesh that supports creating the digital order. Krama Intelligence Protocol seamlessly brings together Intelligence, Connectedness and Trust (the new ICT!) to create a fundamental digital fabric on which new digital services can be directly built.
+KIP is a distributed intelligence protocol that creates hybrid cooperative digital mesh by integrating a new business-ready Gen3 blockchain technology, heterogeneous distributed data, trustable cognition and connected devices.
+
+We live in a digitally intensive era, where people and businesses are interacting continually with specific intents to satisfy requirements of mutual gain.
+Harnessing value out of such interactions demands tremendous amount of data and advanced models that demand accuracy of the persisted datapoints, yet often arrive at inaccurate results.
+
+Fortunately, Blockchain has uncovered the possibility of persisting univariate timestamped transactions pointing to the occurrence of the event of transactions accurately, but not the intent behind such interactions.
+Even though, Blockchain technologies are able to showcase provenance of an asset and its underlying transactions, it has been proven inefficient to persist & manage the multivariate payload directly on the Blockchain, due to its data architectural constraints. This is results in a _"loss of context"_.
+
+The issue of multi-variate persistence was rescued thanks to off-chain data storage mechanisms introduced by IPFS, StorJ, Swarm, SIA etc.. Although storing the payload information pertaining to a transaction had become easier, the ability to reap trusted and meaningful contexts out of such transactions have been seldom possible due to the lack of an environment that facilitates distributed application of multi-variate information vectors on the persisted data.
+
+KIP resolves this issue with an elegant multilateral approach:  
+> _**"Truly distributed intelligence empowered by provenance, creating context with multiple vectors - resulting in meaningful business interactions."**_
+
+KFS(Krama File System) ensures data management in a truly distributed manner by replicating the state changes of all data types cryptographically without any conflicts across the network.
+
+TDU information vectors are applied to these data at the point of interaction and builds on existing points(“The TDU points in the KIP wallet).
+
+These resulting data points pertaining to a user, shapes the future interactions backed by combinatorial assertion made by AI models & the counterparties of the historical interactions.
+
+This facilitates businesses to experiment new white spaces and offer incremental value to its existing propositions.
+
+#### Why KIP ?
+
+We are in a digitally connected world where constant interactions are creating networks that have a personality resembling real world human networks. KIP is essentially a cooperative digital mesh that supports creating the digital order. Krama Intelligent Protocol seamlessly brings together Intelligence, Connectedness and Trust (the new ICT!) to create a fundamental digital fabric on which new digital services can be directly built using distributed intelligence.
 
 Challenges of existing blockchain ecosystems:
 
@@ -81,21 +111,21 @@ Challenges of existing blockchain ecosystems:
   Business transactions in the new digital era struggle to enable new decision making data & actionable insights without hybrid perspectives on the said transactions. This lack in perspectives is henceforth creating a web sphere of low grade data that is not fit for consumption by advanced models. This gives rise to TDU - the Total Digital Utility in KIP that enables application of multiple information vectors right at the time of the interaction, thereby able to capture business values beyond data.
 
 2. **Inadequate support to big data & cognition**  
-  Although big data is critical in enhancing various components in the ecosystem ranging from user experience to business models, blockchain is an ineffective and costly medium to persist big data directly. We may have discovered a few external offchain data storage services such as BigchainDB/Ocean Protocol <sup><a href="#references">[4]</a></sup>, IPFS <sup><a href="#references">[5]</a></sup> , StorJ, Swarm, SIA etc., however, the mentioned services have failed to deliver a fully mature storage systems capable of serving query requests of heterogeneous forms in a truly permanent manner without the need of an external token whose value might be subjected to volatility <sup><a href="#references">[5]</a></sup>. KIP addresses this issue with a highly available in-line file system that charges users for off-chain data storage in a consistent & balanced manner with flexible options to permission the data as required.
+  Although big data is critical in enhancing various components in the ecosystem ranging from user experience to business models, blockchain is an ineffective and costly medium to persist big data directly. We may have discovered a few external offchain data storage services such as BigchainDB/Ocean Protocol <sup><a href="#references">[4]</a></sup>, IPFS <sup><a href="#references">[5]</a></sup> , StorJ, Swarm, SIA etc..
+  However, the mentioned services have failed to deliver a fully mature storage systems capable of serving query requests of heterogeneous forms in a truly inline distributed yet permanent manner without the need of an external token whose value might be subjected to volatility <sup><a href="#references">[5]</a></sup>. KIP addresses this issue with a highly available in-line distributed file system that charges users for off-chain data storage in a consistent & balanced manner with flexible options to permission the data as required.
 
 3. **Partial scale-outs**  
   The Gen1 & Gen2 blockchain platforms have been able to distribute power across all the nodes in their respective networks. The Proof of Work is followed by its demerits of selective absorption & compete, with the ability to gain domination in the entire the network by owning majority of the high-frequency ASICs. The Proof of Stake eliminates the unnecessary need for energy in mining and funnels the power distribution concept of Casper <sup><a href="#references">[6]</a></sup> by allowing all vested actors to be able to bet / bid on the proposed block, but lose the vested assets if malicious in act. However, this approach is haunted by the demonic demerit of capitalism & corroboration between miners/verifying nodes to establish centralized power to mint block with favourable transactions. An abrupt increase in the number of nodes is not practically addressed by these consensus models. KIP resolves this issue using TARA's ability to organize the new & existing nodes in a sentinel manner with minimum intervention.
 
 4. **Inadequate throughput**  
   Both the Gen1 & Gen2 blockchain platforms have been successfully able to distribute the power among the actors with minimal tradeoffs. However, the platforms have become inefficient in supporting enterprise-grade throughput,with its inability to pass hundreds of thousands or millions of transactions per second. Enterprise businesses with broad range of consumer base & variety of users favour platforms that supports 'scale up' model to ensure availability and aggravate the movements of transactions within fraction of seconds. This is unfortunately a failure in existing blockchain ecosystem as there is an inability to classify the nature & interest of each mining/verifying node entity. KIP addresses this issue with the concept of 'Modulated Trust', ably supported by TARA 'state channels' & run by mutually consented consortiums in each vertical of their own.
-  <!-- This converts to less time for verification. -->
 
 5. **Gas volatility & Forks**  
   We understand predictable cost of ownership & operation favours any business application to move further step ahead towards blockchain adoption. Although Gen1 blockchain platforms focused on movement of assets in a peer to peer fashion, the Gen2 blockchain platforms targeting 'real-world' scenarios failed to consider the changes in the gas cost in the long term affected by the associated volatility in the market of their own. The dollar equivalent gas-price payable incurred to print a basic welcome text string using a smart contract today, has increased by several folds since its deployment in 2016. This uncertainty in the gas price & political/financial motivations behind forks has discouraged many businesses to deploy critical components, if not the entire application on the blockchain. KIP addresses these uncertainties by hosting a fork-resistant blockchain with self-balancing utilitarian formula for the KIP token - which serves as the universal interface of payment to all services.
 
 ## Krama - The new digital order
 
-### KIP: The Gen3 Blockchain Technology
+### Enter KIP
 
 ![Krama PoV](/images/whitepaper/KIP-Krama_PoV.png)
 <p style="text-align:center"> <b>Fig 4:</b> Krama PoV</p>
@@ -114,7 +144,7 @@ KIP addresses this challenge by adding context to the blockchain by leveraging I
 
 Major components encompassing the KIP ecosystem are:
 
-- **diApp:** The distributed intelligent application 
+- **diApp:** The distributed intelligent application
 
 - **KIP Service Interface:** Authenticate & relay user requests to managers of all the Krama services mentioned.
 
@@ -190,7 +220,7 @@ This figure depicts a hybrid 2-way interaction between two users, due to a mutua
 ![KIP K2U2K State Transition ](/images/whitepaper/KIP-K2U2K_State_Transition_System.png)
 <p style="text-align:center"> <b>Fig 10:</b> A K2U / U2K Interaction state transition</p>
 
-This figure depicts yet another 2-way hybrid interactions with demand for utility payable by KIP. Other way, there's a mutual demand for KIP tokens for exchange of acceptable TDU points belonging to a certain dimension. 
+This figure depicts yet another 2-way hybrid interactions with demand for utility payable by KIP. Other way, there's a mutual demand for KIP tokens for exchange of acceptable TDU points belonging to a certain dimension.
 Such interactions occur under social and professional applications built on KIP where the declared attributes can be audited for transparency before harnessing.
 
 #### T2U / U2T Interaction state transition
@@ -209,17 +239,12 @@ Such interactions may occur in bug bounty & marketplace applications where users
 
   ![KIP TDU](/images/whitepaper/KIP-TDU.png)
   <p style="text-align:center"> <b>Fig 12:</b> TDU - New measure of persistence</p>
-  
+
   T.D.U. stands for Total Digital Utility. Essentially, TDU is a collective measure of disparate behavior of actors in the KIP ecosystem involved across different types of interaction on multiple diApps.
-  
+
   TDU plays a major role in transforming existing digital *"transactions"* into *"interactions"* bearing multiple information vectors. This facilitates the developers to explore a whole new arena of business models and whitespace in the coming digital leap.
-  
-  TDU isn't a vehicle to merely capture datapoints. It offers a multi-dimensional value environment for all KIP users to leverage their respective interests and abilities to leverage services.
 
-  T.D.U. stands for Total Digital Utility. Essentially, TDU is a collective measure of disparate behavior of actors in the KIP ecosystem involved across different types of interaction on multiple diApps.  
-  TDU plays a major role in transforming existing digital "transactions" into "interactions" bearing multiple information vectors. This facilitates the developers to explore a whole new arena of business models and whitespace in the coming digital leap.  
   TDU isn't a vehicle to merely capture datapoints. It offers a multi-dimensional value environment for all KIP users to leverage their respective interests and abilities to leverage services. (learn more on TDU [here](/pages/tdu/tdu-specs.md))
-
 
 #### Big Data & Cognition
 
@@ -235,7 +260,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
   <p style="text-align:center"> <b>Fig 14:</b> Dynamic scale-out & sentinel network organization on KIP</p>
 
   Most business use-cases on several blockchain platforms are seldom scalable. This reflects the nascent stage of blockchain environment we are in. However, KIP spawns a new generation of blockchain solutions on top of its platform for truly scalable solutions.  
-  This is made possible by leveraging PBFT <sup><a href="#references">[7]</a></sup> Hardened RAFT to support abrupt changes in the network strength. The deterministic approach encourages businesses to adopt a minimalistic approach to obtain exponential scaling on cost-efficient hardware, thereby contributing to a greener world.(learn more on scalability [here](/pages/tara/tara-specs.md)))
+  This is made possible by leveraging PBFT <sup><a href="#references">[7]</a></sup> Hardened RAFT to support abrupt changes in the network strength. The deterministic approach encourages businesses to adopt a minimalistic approach to obtain exponential scaling on cost-efficient hardware, thereby contributing to a greener world.(learn more on scalability [here](/pages/tara/tara-specs.md))
 
 #### Throughput
 
@@ -243,7 +268,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
   <p style="text-align:center"> <b>Fig 15:</b> Throughput using Modulated Trust in KIP </p>
 
   Real-time businesses such as VISA and other retail or commercial payment systems process thousands of transactions per second. This is far from the current state of majority of blockchain protocols. Waiting for a confirmation of a coffee purchase over sale of diamond doesn’t make true sense in day-to-day life.  
-  This issue is addressed in KIP by allowing users to choose the level of trust needed to approve of the transaction between the parties. We call it the “modulated trust”. KIP adopts the modulated trust by leveraging TARA <sup><a href="#references">[8]</a></sup> (Ternary Augmented RAFT Architecture) to achieve partial confirmations from nodes designated by the users(we call them as “fast followers”) as well as stakeholders from other regulatory authorities(we call them as “shadow followers”).(learn more on modulated trust [here](/pages/tara/tara-specs.md))) 
+  This issue is addressed in KIP by allowing users to choose the level of trust needed to approve of the transaction between the parties. We call it the “modulated trust”. KIP adopts the modulated trust by leveraging TARA <sup><a href="#references">[8]</a></sup> (Ternary Augmented RAFT Architecture) to achieve partial confirmations from nodes designated by the users(we call them as “fast followers”) as well as stakeholders from other regulatory authorities(we call them as “shadow followers”).(learn more on modulated trust [here](/pages/tara/tara-specs.md))
 
 #### Predictable TCO & Finality
 
@@ -261,9 +286,9 @@ Individual developers and organizations can reap economic benefits by offering d
 ![KIP DIO Marketplace](/images/whitepaper/KIP-DIO_Marketplace.png)
 <p style="text-align:center"> <b>Fig 17:</b> DIO Marketplace</p>
 
-KIP ecosystem offers makers to host their dApps, libraries and datastores, where, the source can be either closed or open-sourced. Both, the diApps & libraries are addressed by the deployed address of respective logical contracts. Validated datastores are addressed by the unique cryptographic hash generated by the KFS registry.
+KIP ecosystem offers makers to host their diApps, libraries and datastores, where, the source can be either closed or open-sourced. Both, the diApps & libraries are addressed by the deployed address of respective logical contracts. Validated datastores are addressed by the unique cryptographic hash generated by the KFS registry.
 
-KIP Marketplace is a DIO(Distributed Intelligent Organization) with extraordinary capabilities to reduce capitalistic approach to competition, thereby facilitating a a single level of entry for service providers.
+KIP Marketplace is a DIO(Distributed Intelligent Organization) with extraordinary capabilities to reduce capitalistic approach to competition, thereby facilitating a single level of entry for service providers.
 
 ### Token economy & DEX
 
@@ -281,15 +306,15 @@ KIP also possesses a unique self-balancing utilitarian formula to calculate plat
 
 DEX has become a dire necessity in any multilateral blockchain ecosystem, where token can be intermittently exchanged between 2 parties, when required, to avail a particular service from a vendor.
 
-KIP shall possess an internal DEX that facilitates the exchange of complimentary tokens. More on this [here](/pages/technical-primer/TechnicalPrimer.md).
+KIP shall possess an internal DEX that facilitates the exchange of complimentary tokens. (learn more on DEX working [here](/pages/technical-primer/TechnicalPrimer.md))
 
 ## Enterprise adoption
 
 ### Solution models
 
-KIP offers comprehensive & flexible solution models that favours accelerated adoption for your organization. 
+KIP offers comprehensive & flexible solution models that favours accelerated adoption for your organization.
 
-KIP also offers a simplistic approach to moving critical components in the business model to be migrated. Continuation of historic data, wherever applicable,can be handled by KIP File System at a relatively cheaper cost and higher availability. Existing dApps on other blockchain platforms compatible with KIP Migration can also practise the same models. (Learn more on *Historical Data Migration* [here](/pages/technical-primer/TechnicalPrimer.md))
+KIP also offers a simplistic approach to moving critical components in the business model to be migrated. Continuation of historic data, wherever applicable,can be handled by KIP File System at a relatively cheaper cost and higher availability. Existing diApps on other blockchain platforms compatible with KIP Migration can also practise the same models. (Learn more on *Historical Data Migration* [here](/pages/technical-primer/TechnicalPrimer.md))
 
 ![Enterprise Adoption - Solution model](/images/whitepaper/KIP-Solution_Model.png)  
 <p style="text-align:center"> <b>Fig 20:</b> Enterprise Adoption - Solution Model</p>
@@ -332,7 +357,7 @@ KIP platform shall also equip modern OTA-like patch automation mechanisms to ful
 
 ## Conclusion
 
-KIP facilitates big data persistence, scalability, maximized throughput, & predictable TCO. This enables enterprises to adopt modern diApps for “real-world” scenarios that exhibits Upgradability, Agility, Robustness, Security, Scalability, Responsiveness & Accountability.
+KIP establishes distributed intelligence with big data persistence, scalability, maximized throughput, & predictable TCO. This enables enterprises to adopt diApps (distributed intelligent apps) for modern “real-world” scenarios that exhibits Upgradability, Agility, Robustness, Security, Scalability, Responsiveness & Accountability.
 
 ## References
 
