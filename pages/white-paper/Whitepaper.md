@@ -3,10 +3,10 @@
 
 ![Krama Intelligent Protocol - Logo](/images/logo.png)
 
-<h3 style="text-align:center">WORKING DRAFT</h3>
-<p style="text-align:center">Anantha Krishnan <br/> Ganesh Prasad Kumble<br/> Karthik Balasubramanian</p>
-<h4 style="text-align:center">KIP FOUNDATION</h4>
-<p style="text-align:center"><a href="mailto:dev@kip.foundation">dev@kip.foundation</a></p>
+<h3 align="center">WORKING DRAFT</h3>
+<h4 align="center">Anantha Krishnan <br/> Ganesh Prasad Kumble<br/> Karthik Balasubramanian</h4>
+<h3 align="center">KIP FOUNDATION</h3>
+<h3 align="center"><a href="mailto:dev@kip.foundation">dev@kip.foundation</a></h3>
 
 **TABLE OF CONTENTS**
   - [Blockchain landscape](#blockchain-landscape)
