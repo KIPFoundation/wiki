@@ -63,7 +63,7 @@ With an inherent nature of insecurity, humans always depended upon trusted inter
   Bitcoin transactions are based on the UTXO(Unspent Transaction Outputs) model, with each UTXO having a denomination and an owner (defined by a 20-byte address which is essentially a cryptographic public key[1]), that identifies each bitcoin with its own identity with fungible behaviour, i.e., to be able to transfer parts or the whole bitcoin from one wallet to another with a degree of divisibility to identify fractional parts of bitcoin.
 
   ![Bitcoin State Transition](/images/whitepaper/bitcoin-statetransition.png)
-  <p style="text-align:center"> <b>Fig 2:</b> Bitcoin State Transition <sup><a href="#references">[1][2]</a></sup></p>
+  <p align="center"> <b>Fig 2:</b> Bitcoin State Transition <sup><a href="#references">[1][2]</a></sup></p>
   As depicted in the above figure, the bitcoin transaction is responsible for state changes due to transfer of bitcoins from one wallet to another. Almost all the transactions evolved in this blockchain is user-driven, meaning the transaction was directly signed by the user holding bitcoins in the wallet.
 
 
@@ -72,7 +72,7 @@ With an inherent nature of insecurity, humans always depended upon trusted inter
   Ethereum defines its state transition system as a function which formally verifies a few conditions before executing the transactions that could be directly user-driven or a smart automated contract call from the low-level script executed by the EVM(Ethereum Virtual Machine) based on a few logical triggers driven by oracles etc.
 
   ![Ethereum State Transition](/images/whitepaper/ethereum-statetransition.png)
-  <p style="text-align:center"> <b>Fig 3:</b> Ethereum State Transition <sup><a href="#references">[2]</a></sup></p>
+  <p align="center"> <b>Fig 3:</b> Ethereum State Transition <sup><a href="#references">[2]</a></sup></p>
 
   Before mining, Ethereum transactions are validated by several factors including signature, balance, sender's nonce count, enough gas balance, & validity of receiving account.
 
@@ -128,7 +128,7 @@ Challenges of existing blockchain ecosystems:
 ### Enter KIP
 
 ![Krama PoV](/images/whitepaper/KIP-Krama_PoV.png)
-<p style="text-align:center"> <b>Fig 4:</b> Krama PoV</p>
+<p align="center"> <b>Fig 4:</b> Krama PoV</p>
 
 Bitcoin and the underlying blockchain mechanism are technological homerun. Blockchain gives back the power in the hands of individuals by removing the need of intermediaries to exchange value directly, hence truly enabling decentralized economies and transform tedious processes that involve human interventions that are susceptible to radical thinking.  
 
@@ -183,42 +183,42 @@ The order is moving from Transactions to Interactions. KIP leverages emergent te
 #### KIP Wallet Account State
 
 ![KIP Account State](/images/whitepaper/KIP-Typical_Account_State.png)
-<p style="text-align:center"> <b>Fig 5:</b> Typical KIP Account's State</p>
+<p align="center"> <b>Fig 5:</b> Typical KIP Account's State</p>
 
 As depicted in the figure above, a typical KIP account managed by the user consists of the KIP balance, nonce count for all the transactions signed on behalf of corresponding account, token balance representing the closing balance of number of tokens left, and the TDU points - an array of balances representing a dimension of TDU in the KIP ecosystem based on the user's behaviour.
 
 #### K2K Interaction state transition
 
 ![KIP K2K State Transition ](/images/whitepaper/KIP-K2K_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 6:</b> A K2K Interaction state transition</p>
+<p align="center"> <b>Fig 6:</b> A K2K Interaction state transition</p>
 
 The figure depicts a simple 1-way interaction that involves transfer of KIP from one account to another. In this case, one of the colleague is paying up for their lunch paid by one of the other peer. A split in the bill contract could spawn such interactions.
 
 #### T2T Interaction state transition
 
 ![KIP T2T State Transition ](/images/whitepaper/KIP-T2T_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 7:</b> A T2T Interaction state transition</p>
+<p align="center"> <b>Fig 7:</b> A T2T Interaction state transition</p>
 
 The figure depicts yet another simple interaction that involves transfer of tokens of some characteristics from one account to another. In this case, there exists a 2-way interaction with transactions exchanging heterogenous tokens at an agreed rate of exchange.
 
 #### U2U Interaction state transition
 
 ![KIP U2U State Transition ](/images/whitepaper/KIP-U2U_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 8:</b> A U2U Interaction state transition</p>
+<p align="center"> <b>Fig 8:</b> A U2U Interaction state transition</p>
 
 The figure depicts yet another simple interaction that involves exchange of heterogenous TDU points for service of a specific skill in exchange for privilege to access another service of some arbitrary form. This is an improvement in the Gen3 where non monetary interests can be realized to achieve similar importance & access to services.
 
 #### T2K / K2T Interaction state transition
 
 ![KIP K2T2K State Transition ](/images/whitepaper/KIP-K2T2K_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 9:</b> A K2T / T2K Interaction state transition</p>
+<p align="center"> <b>Fig 9:</b> A K2T / T2K Interaction state transition</p>
 
 This figure depicts a hybrid 2-way interaction between two users, due to a mutual demand in heterogenous asset classes - the universal `KIP` & app specific token `FEM` . A typical scenario for such transactions apepar in DEX applications & application service billing buffers.
 
 #### K2U / U2K Interaction state transition
 
 ![KIP K2U2K State Transition ](/images/whitepaper/KIP-K2U2K_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 10:</b> A K2U / U2K Interaction state transition</p>
+<p align="center"> <b>Fig 10:</b> A K2U / U2K Interaction state transition</p>
 
 This figure depicts yet another 2-way hybrid interactions with demand for utility payable by KIP. Other way, there's a mutual demand for KIP tokens for exchange of acceptable TDU points belonging to a certain dimension.
 Such interactions occur under social and professional applications built on KIP where the declared attributes can be audited for transparency before harnessing.
@@ -226,7 +226,7 @@ Such interactions occur under social and professional applications built on KIP 
 #### T2U / U2T Interaction state transition
 
 ![KIP T2U2T State Transition ](/images/whitepaper/KIP-T2U2T_State_Transition_System.png)
-<p style="text-align:center"> <b>Fig 11:</b> A T2U / U2T Interaction state transition</p>
+<p align="center"> <b>Fig 11:</b> A T2U / U2T Interaction state transition</p>
 
 This figure depicts yet another 2-way interaction with mutual demand for heterogenous asset classes - app tokens with specific characteristics needed to access services, & the TDU points in a specific dimension that is transferable and consumed for similar access to service.
 Such interactions may occur in bug bounty & marketplace applications where users are willing to crowdsource in exchange for their app tokens.
@@ -238,7 +238,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 #### TDU
 
   ![KIP TDU](/images/whitepaper/KIP-TDU.png)
-  <p style="text-align:center"> <b>Fig 12:</b> TDU - New measure of persistence</p>
+  <p align="center"> <b>Fig 12:</b> TDU - New measure of persistence</p>
 
   T.D.U. stands for Total Digital Utility. Essentially, TDU is a collective measure of disparate behavior of actors in the KIP ecosystem involved across different types of interaction on multiple diApps.
 
@@ -249,7 +249,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 #### Big Data & Cognition
 
   ![KIP TDU](/images/whitepaper/Arch-BigData_and_Cognition.png)
-  <p style="text-align:center"> <b>Fig 13:</b> Big data persistence & Cognition using KFS</p>
+  <p align="center"> <b>Fig 13:</b> Big data persistence & Cognition using KFS</p>
 
   Big data has become an integral part of business processes at various levels of operations. However, emerging platforms have not been able to address the exponential cost of data replication and simply persisting the consensus of the stored data in a fault tolerant manner.  
   KIP differentiates itself in the market by enabling the users to store information on an external storage realm KFS  (Krama File System, an enhanced version of IPFS) that is capable of storing large volumes of various forms of data, yet maintaining the cryptographic state changes of the data.(learn more on big data persistence & AI practices [here](/pages/kfs/kfs-specs.md))
@@ -257,7 +257,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 #### Scalability
 
   ![KIP TDU](/images/whitepaper/Arch-Scalability.png)
-  <p style="text-align:center"> <b>Fig 14:</b> Dynamic scale-out & sentinel network organization on KIP</p>
+  <p align="center"> <b>Fig 14:</b> Dynamic scale-out & sentinel network organization on KIP</p>
 
   Most business use-cases on several blockchain platforms are seldom scalable. This reflects the nascent stage of blockchain environment we are in. However, KIP spawns a new generation of blockchain solutions on top of its platform for truly scalable solutions.  
   This is made possible by leveraging PBFT <sup><a href="#references">[7]</a></sup> Hardened RAFT to support abrupt changes in the network strength. The deterministic approach encourages businesses to adopt a minimalistic approach to obtain exponential scaling on cost-efficient hardware, thereby contributing to a greener world.(learn more on scalability [here](/pages/tara/tara-specs.md))
@@ -265,7 +265,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 #### Throughput
 
   ![KIP TDU](/images/whitepaper/Arch-Throughput.png)
-  <p style="text-align:center"> <b>Fig 15:</b> Throughput using Modulated Trust in KIP </p>
+  <p align="center"> <b>Fig 15:</b> Throughput using Modulated Trust in KIP </p>
 
   Real-time businesses such as VISA and other retail or commercial payment systems process thousands of transactions per second. This is far from the current state of majority of blockchain protocols. Waiting for a confirmation of a coffee purchase over sale of diamond doesn’t make true sense in day-to-day life.  
   This issue is addressed in KIP by allowing users to choose the level of trust needed to approve of the transaction between the parties. We call it the “modulated trust”. KIP adopts the modulated trust by leveraging TARA <sup><a href="#references">[8]</a></sup> (Ternary Augmented RAFT Architecture) to achieve partial confirmations from nodes designated by the users(we call them as “fast followers”) as well as stakeholders from other regulatory authorities(we call them as “shadow followers”).(learn more on modulated trust [here](/pages/tara/tara-specs.md))
@@ -273,7 +273,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 #### Predictable TCO & Finality
 
   ![KIP TDU](/images/whitepaper/Arch-Gas_Volatility_and_Finality.png)
-  <p style="text-align:center"> <b>Fig 16:</b> Predictable gas price</p>
+  <p align="center"> <b>Fig 16:</b> Predictable gas price</p>
 
   Predictable gas cost & Transaction finality makes sense to business use-cases where assets are represented in some form and certainty is expected on the ownership of such assets. Many public & private blockchain platforms seem to take on this challenge from a game-theory & crypto-economic approach.  
   As a business-centric blockchain, KIP primarily leverages the fact that private and permissioned blockchains can design intricacies to punish bad actors economically and legally to ensure finality on the assets exchanges between users.  
@@ -284,7 +284,7 @@ Such interactions may occur in bug bounty & marketplace applications where users
 Individual developers and organizations can reap economic benefits by offering diApps and libraries that can be consumed in-turn to develop applications.
 
 ![KIP DIO Marketplace](/images/whitepaper/KIP-DIO_Marketplace.png)
-<p style="text-align:center"> <b>Fig 17:</b> DIO Marketplace</p>
+<p align="center"> <b>Fig 17:</b> DIO Marketplace</p>
 
 KIP ecosystem offers makers to host their diApps, libraries and datastores, where, the source can be either closed or open-sourced. Both, the diApps & libraries are addressed by the deployed address of respective logical contracts. Validated datastores are addressed by the unique cryptographic hash generated by the KFS registry.
 
@@ -295,14 +295,14 @@ KIP Marketplace is a DIO(Distributed Intelligent Organization) with extraordinar
 KIP Tokens are an universal interface to all app tokens on the KIP platform and affiliated marketplaces. Developers specify the app token characteristics using Krama Tokenization Services. This is reflected in the token interface smart contract corresponding to the diApp, takes the service usage into account and charge the user for the same.
 
 ![KIP Exchange & Buffer mechanism](/images/whitepaper/KIP-Exchange_and_Buffer_mechanism.png)
-<p style="text-align:center"> <b>Fig 18:</b> KIP Exchange & Buffer Mechanism</p>
+<p align="center"> <b>Fig 18:</b> KIP Exchange & Buffer Mechanism</p>
 
 KIP stands out from the rest in Tokenization aspects by allowing both buffer & exchange mechanisms, thereby achieving a universal interface that balances the supply demand of app tokens in the digital ecosystem. All app tokens shall be ICO’ed by the entity offering the DIapp solution and integrated with an inline index to address volatility and entry.
 
 KIP also possesses a unique self-balancing utilitarian formula to calculate platform fee and transaction fee for nodes responsible for consensus, and incentivizes the validators’ interests by awarding slice of TDU Scores in the dimensions relevant to trust and economic activities.
 
 ![KIP DEX](/images/whitepaper/KIP-DEX.png)
-<p style="text-align:center"> <b>Fig 19:</b> KIP Internal DEX</p>
+<p align="center"> <b>Fig 19:</b> KIP Internal DEX</p>
 
 DEX has become a dire necessity in any multilateral blockchain ecosystem, where token can be intermittently exchanged between 2 parties, when required, to avail a particular service from a vendor.
 
@@ -317,7 +317,7 @@ KIP offers comprehensive & flexible solution models that favours accelerated ado
 KIP also offers a simplistic approach to moving critical components in the business model to be migrated. Continuation of historic data, wherever applicable,can be handled by KIP File System at a relatively cheaper cost and higher availability. Existing diApps on other blockchain platforms compatible with KIP Migration can also practise the same models. (Learn more on *Historical Data Migration* [here](/pages/technical-primer/TechnicalPrimer.md))
 
 ![Enterprise Adoption - Solution model](/images/whitepaper/KIP-Solution_Model.png)  
-<p style="text-align:center"> <b>Fig 20:</b> Enterprise Adoption - Solution Model</p>
+<p align="center"> <b>Fig 20:</b> Enterprise Adoption - Solution Model</p>
 
 As represented in the figure above, developers can pick up the specifications based on the organization's strategy & be able to convert them into functional logic in code. This is made possible by KIDE(Krama Integrated Development Environment) - A web IDE that offers seamless environment for development, testing & simulation by providing standard 'consumable' libraries that enables the developer to identify, authenticate and manage actors in a diApp space. KIDE is tightly coupled with all the Krama Services such as Identity Services, Krama Tokenization Services, etc. that are subscribed by the developer's organization. (Learn more on *KIDE* [here](/pages/kide/kide-specs.md))
 
@@ -330,7 +330,7 @@ diApps developed on KIP shall be upgrade-able, highly available, secure, and sca
 KIP offers a truly decentralized fashion of monetizing assets and solutions in the form of user's subscription to diApp services at a beneficial cost to both parties with lower and predicable interaction fee.
 
 ![Enterprise Adoption - Financial model](/images/whitepaper/KIP-Financial_Model.png)  
-<p style="text-align:center"> <b>Fig 21:</b> Enterprise Adoption - Financial Model</p>
+<p align="center"> <b>Fig 21:</b> Enterprise Adoption - Financial Model</p>
 
 As depicted in the figure above, developers can float tokens by specifying the nature of the tokens along based on the organization's strategy. This is essentially reflected in a smart contract that spawns tokens in the ecosystem. The characteristics and interface to the tokens are specified in KIDE which is tightly coupled with the Krama Tokenization Service(Learn more on *Krama Tokenization Service* [here](/pages/technical-primer/TechnicalPrimer.md)).
 
@@ -347,7 +347,7 @@ Entities willing to participate as validating nodes in the KIP network need to p
 Users holding KIP token for a pre-determined amount of time are eligible for vote to changes in the network. This and a set of other criteria ensures the best of interest from users in the ecosystem and reflects the collective responsibility of upholding the network's stability.
 
 ![Enterprise Adoption - Governance model](/images/whitepaper/KIP-Governance_Model.png)  
-<p style="text-align:center"> <b>Fig 22:</b> Enterprise Adoption - Governance Model</p>
+<p align="center"> <b>Fig 22:</b> Enterprise Adoption - Governance Model</p>
 
 As depicted in the figure above, Users and eligible voters are notified of significant breaking changes that are proposed in the upcoming upgrade of the network. Each voter casts a vote on individual breaking changes with either a 'yay', 'nay' or 'abstain'. Votes pertaining to each breaking change is collected in the *voting booth diApp* and verified. Dependency check is conducted internally on the breaking changes to prevent issues with upgrades when a change is implemented without it's supported dependency feature.
 
