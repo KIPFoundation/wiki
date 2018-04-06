@@ -293,7 +293,7 @@ KIP Marketplace is a DIO(Distributed Intelligent Organization) with extraordinar
 
 KIP Tokens are an universal interface to all app tokens on the KIP platform and affiliated marketplaces. Developers specify the app token characteristics using Krama Tokenization Services. This is reflected in the token interface smart contract corresponding to the diApp, takes the service usage into account and charge the user for the same.
 
-![KIP Exchange & Buffer mechanism](/images/whitepaper/KIP-Exchange_&_Buffer_Mechanism.png)
+![KIP Exchange & Buffer mechanism](/images/whitepaper/KIP-Exchange_and_Buffer_Mechanism.png)
 <p style="text-align:center"> <b>Fig 18:</b> KIP Exchange & Buffer Mechanism</p>
 
 KIP stands out from the rest in Tokenization aspects by allowing both buffer & exchange mechanisms, thereby achieving a universal interface that balances the supply demand of app tokens in the digital ecosystem. All app tokens shall be ICO’ed by the entity offering the DIapp solution and integrated with an inline index to address volatility and entry.
