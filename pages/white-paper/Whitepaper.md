@@ -56,7 +56,7 @@ From the _"Information Era"_ where everything is centralised, the world has been
 With an inherent nature of insecurity, humans always depended upon trusted intermediaries to lower uncertainty in exchanging values. With the implementation of blockchain technology, we may be able to reduce the dependency on traditional institutions like banks, corporations and governments to reduce uncertainty and exchange value in the digital world. Several blockchain platforms & technologies have been able to find partial success in disintermediating the incumbents that failed to operate better under ethical & performance grounds.
 
 ![Generations of blockchain - differenciation table](/images/whitepaper/KIP-Gen_vs_Feat.png)
-<p style="text-align:center"> <b>Fig 1:</b> Generations of Blockchain <sup><a href="#references">[1][2]</a></sup> </p>
+<p align="center"> <b>Fig 1:</b> Generations of Blockchain <sup><a href="#references">[1][2]</a></sup> </p>
 
 - **Gen 1 Blockchain**
 
