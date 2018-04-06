@@ -1,4 +1,5 @@
-<h1 style="text-align:center">Krama Intelligent Protocol (KIP) Whitepaper</h1>
+<!-- <h1 style="text-align:center"></h1> -->
+<h1 align="center">Krama Intelligent Protocol (KIP) Whitepaper</h1>
 
 ![Krama Intelligent Protocol - Logo](/images/logo.png)
 
