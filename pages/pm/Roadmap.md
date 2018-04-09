@@ -1,2 +1,0 @@
-# Roadmap
-KIP's roadmap
