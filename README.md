@@ -22,6 +22,8 @@ This is the official repository for all sorts of KIP documentation.
 
 ## Contribution
 
+![#Code4KIP](/images/contribute2kip.gif)
+
 KIP is built on several open-source projects and we are always open to enhancements! 
 
 You will be required to sign the Contributor License Agreement (CLA) before we are able to merge. If you have any questions about the contribution process, please feel free to send an email to [dev@kip.foundation](mailto:dev@kip.foundation).  
@@ -29,6 +31,7 @@ You will be required to sign the Contributor License Agreement (CLA) before we a
 Once done, please go through [CONTRIBUTING.md](/CONTRIBUTING.md) and feel free to file issues, bugs & PRs.  
 
 ## License
+
 https://github.com/KIPFoundation/wiki
 
 Copyright (c) 2018 [KIP Foundation](http://kip.foundation)  
