@@ -1,5 +1,5 @@
 
-<p><a style=algin:center" href="http://kip.foundation"><img src="./images/logo.png" /></a>
+<p><a style=algin:center" href="http://kip.foundation"><img src="./images/logo.png" /></a></p>
 
 # Wiki - Krama Intelligent Protocol (KIP)
 This is the official repository for all sorts of KIP documentation.
