@@ -63,7 +63,7 @@ KIP resolves this gap by converging Intelligence, Connectedness and Trust (the n
 
 The third generation of web is comprised of multi-faceted technologies with some of the stacks synonymous to an entire domain. KIP assumes a few stacks in the forefront of development as the source of research for contrast and design resolution.
 
-We observe Ethereum<sup><a href="#references">[o]</a></sup> & its forked versions to be at the forefront in Blockchain, whereas Practical Byzantine Fault Tolerant (PBFT)<sup><a href="#references">[o]</a></sup> systems & its variants being at the forefront in connecting devices ranging from sensors to servers, and finally, neural networks & convergent expert systems that covers a fair share of gaining artificial intelligence.
+We observe Ethereum<sup><a href="#references">[1]</a></sup> & its forked versions to be at the forefront in Blockchain, whereas Practical Byzantine Fault Tolerant (PBFT)<sup><a href="#references">[2]</a></sup> systems & its variants being at the forefront in connecting devices ranging from sensors to servers, and finally, neural networks & convergent expert systems that covers a fair share of gaining artificial intelligence.
 
 ## Proposed System
 
@@ -75,9 +75,9 @@ We discuss each of approaches here in detail:
 
 ### Sentinel Scalability
 
-KIP leverages TARA(Ternary Augmented Raft Architecture)<sup><a href="#references">[o]</a></sup>, an enhanced version of RAFT<sup><a href="#references">[o]</a></sup> algorithm, for high-frequency consensus, simplified service discovery & dynamic node management.
+KIP leverages TARA(Ternary Augmented Raft Architecture)<sup><a href="#references">[3]</a></sup>, an enhanced version of RAFT<sup><a href="#references">[4]</a></sup> algorithm, for high-frequency consensus, simplified service discovery & dynamic node management.
 
-TARA provides multi-faceted abilities to manage a network of distributed systems by managing nodes in a graph format. Analogous to vertices connected acyclically by drawing edges in a graph, nodes are connected by an RPC(Remote Procedure Call)<sup><a href="#references">[o]</a></sup> connection between them. The RPC connections establish a network in a hybrid manner.
+TARA provides multi-faceted abilities to manage a network of distributed systems by managing nodes in a graph format. Analogous to vertices connected acyclically by drawing edges in a graph, nodes are connected by an RPC(Remote Procedure Call)<sup><a href="#references">[5]</a></sup> connection between them. The RPC connections establish a network in a hybrid manner.
 
 Each node in the KIP system is defined in the following structure:
 
@@ -175,7 +175,7 @@ func removePeer(Node node) {
 
 ```
 
-TARA leverages raftpb<sup><a href="#references">[o]</a></sup> (github.com/coreos/etcd/raft/raftpb) - The Protobuf<sup><a href="#references">[o]</a></sup> implementation for RAFT from CoreOS' `etcd`<sup><a href="#references">[o]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
+TARA leverages raftpb<sup><a href="#references">[6]</a></sup> (github.com/coreos/etcd/raft/raftpb) - The Protobuf<sup><a href="#references">[7]</a></sup> implementation for RAFT from CoreOS' etcd<sup><a href="#references">[8]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
 
 ![KIP Sentinel Scalability](/images/tech-primer/KIP-Sentinel-Scalability.png)
 
@@ -249,7 +249,7 @@ Every successful modification to the network will be ratified by the `chainExten
 
 ### Modulated Trust
 
-KIP leverages the concept of selective hearing<sup><a href="#references">[o]</a></sup> in the network to facilitate modulated trust. The concept of state channels presented in this paper is different from the concepts used by the ethereum & other blockchain networks to address throughput. Selective hearing in distributed computing network is a well-practiced to address the interest of a sub set of nodes responsible for persisting / operating the relevant information.
+KIP leverages the concept of selective hearing<sup><a href="#references">[9]</a></sup> in the network to facilitate modulated trust. The concept of state channels presented in this paper is different from the concepts used by the ethereum & other blockchain networks to address throughput. Selective hearing in distributed computing network is a well-practiced to address the interest of a sub set of nodes responsible for persisting / operating the relevant information.
 
 Similarly, enterprise stakeholders in a heterogenous business network operate to persist transactional information that favours their respective success. The "single floor communication" philosophy adopted by blockchain has been observed as a challenge, to differentiate priorities between verifying transactions pertaining to lower & relatively higher asset values.
 
@@ -293,9 +293,9 @@ var NodeStateMap map[common.Hash]uint
 
 ```
 
-where, the `NodeStateMap` and `NodeRoleMap` are dynamic mappings used to refer to the nature of the nodes by the sha3<sup><a href="#references">[o]</a></sup> of their Node ID. The mappings are instrumental in identifying the nature of nodes during DHT lookups<sup><a href="#references">[o]</a></sup>.
+where, the `NodeStateMap` and `NodeRoleMap` are dynamic mappings used to refer to the nature of the nodes by the sha3<sup><a href="#references">[10]</a></sup> of their Node ID. The mappings are instrumental in identifying the nature of nodes during DHT lookups<sup><a href="#references">[11]</a></sup>.
 
-The decision to route the transport of information is made based on the Kademlia's<sup><a href="#references">[o]</a></sup> bucket lookups. In KIP network, nodes are required to persist three k-buckets with each bucket's size limiting to, but not limited to 16 with a concurrency factor of 3, to facilitate operations across all buckets corresponding to lookups among Master Nodes, Star Nodes & Service Nodes respectively. 
+The decision to route the transport of information is made based on the Kademlia's<sup><a href="#references">[12]</a></sup> bucket lookups. In KIP network, nodes are required to persist three k-buckets with each bucket's size limiting to, but not limited to 16 with a concurrency factor of 3, to facilitate operations across all buckets corresponding to lookups among Master Nodes, Star Nodes & Service Nodes respectively. 
 
 Distance between the target is compared as followed:
 
@@ -351,9 +351,9 @@ Total Hops = { &iota;( &iota; - 1 ) } + { s( s - 1 ) } <br>
 
 ### Throughput
 
-KIP facilitates high frequency enterprise operations by leveraging the reactive actor streams<sup><a href="#references">[o]</a></sup> offered by TARA. Reactive streams are based on the concept of deadlock-free "execute-only-once" ordering<sup><a href="#references">[o]</a></sup>.
+KIP facilitates high frequency enterprise operations by leveraging the reactive actor streams<sup><a href="#references">[13]</a></sup> offered by TARA. Reactive streams are based on the concept of deadlock-free "execute-only-once" ordering<sup><a href="#references">[14]</a></sup>.
 
-The state channels hosted by the grand nodes & star nodes are facilitated by an actor concurrency model consisting of hybrid `mutex` & `chan` spaces across the network. This hybrid structure allows us to achieve concurrency without tradeoffs at the JUG(EVM<sup><a href="#references">[o]</a></sup>-like) on blocking calls needed to perform function calls. However, each node belonging to respective state channel is a member of a subset of a super-set channel, thereby maintaining systemic information on the wallets & smart contracts.  
+The state channels hosted by the grand nodes & star nodes are facilitated by an actor concurrency model consisting of hybrid `mutex` & `chan` spaces across the network. This hybrid structure allows us to achieve concurrency without tradeoffs at the JUG(EVM<sup><a href="#references">[15]</a></sup>-like) on blocking calls needed to perform function calls. However, each node belonging to respective state channel is a member of a subset of a super-set channel, thereby maintaining systemic information on the wallets & smart contracts.  
 
 ![KIP Throughput](/images/tech-primer/KIP-throughput.png)
 
@@ -413,7 +413,7 @@ Aggregated cost is calculated based on the tier of hardware independent of the c
 
 <p align="center"> <b>Fig 6:</b> KIP - On-chain KIP Token Price Discovery <sup><a href="#references"></a></sup> </p>
 
-KIP also exhibits an extensive ability to record the economic value of exchange transactions for KIPs paired directly with a decentralized virtual currency such as the Dai(A decentralized stablecoin on Ethereum)<sup><a href="#references">[o]</a></sup>, or paired indirectly with other cryptocurrencies available for trade. The objective is to derive at a weighted average value of KIP vs. a stablecoin pegged to a major reserve such as the US Dollar for balancing the associated costs. The average shall be weighted against the Dai/KIP ratio and reset by new values on announcement of new epochs, as voted by vetted KIP holders & node managers.
+KIP also exhibits an extensive ability to record the economic value of exchange transactions for KIPs paired directly with a decentralized virtual currency such as the Dai(A decentralized stablecoin on Ethereum)<sup><a href="#references">[16]</a></sup>, or paired indirectly with other cryptocurrencies available for trade. The objective is to derive at a weighted average value of KIP vs. a stablecoin pegged to a major reserve such as the US Dollar for balancing the associated costs. The average shall be weighted against the Dai/KIP ratio and reset by new values on announcement of new epochs, as voted by vetted KIP holders & node managers.
 
 &nbsp;
 The cost to performance ratio calculated by the benchmark program is recorded in a transparent index maintained by respective nodes. The ratio for each OPCODE class is aggregated based on the tier & the global lookup index is updated each time a finite set of new nodes are added or removed belonging to the specified tier for an epoch.
@@ -653,7 +653,7 @@ Applications in the enterprise environment demands high availability of services
 <h3 align="center" style="background-color: #F7F7F7;"><br>
 <br>&nbsp;</h3>
 
-Although oracles<sup><a href="#references">[o]</a></sup> are available in a few blockchain platforms such as Ethereum, the success rate of absorbing external information into Blockchain is very less. The liabilities of using existing Oracles are not only limited to predicted availability but also loops the gas cost payable for such services.
+Although oracles<sup><a href="#references">[17]</a></sup> are available in a few blockchain platforms such as Ethereum, the success rate of absorbing external information into Blockchain is very less. The liabilities of using existing Oracles are not only limited to predicted availability but also loops the gas cost payable for such services.
 
 Krama Service Interface (KSI) is a breakthrough enhancement to current thinking on Oracles for services. Krama Services has four major purposes:
 
@@ -741,13 +741,13 @@ As a hybrid mesh, KIP offers the user to store information into permissioned dat
 
 KIP offers a native decentralized file storage system called Krama File System(KFS). The file system offers a few groundbreaking measures to reduce the unneeded cost of storing the data on blockchain.  
 
-KFS stores the information and persists changes to the stored information in cryptographic signatures with new checksum-like signatures representing the change in state. KFS is an extension to the IPFS(InterPlanetary File System)<sup><a href="#references">[o]</a></sup>.
+KFS stores the information and persists changes to the stored information in cryptographic signatures with new checksum-like signatures representing the change in state. KFS is an extension to the IPFS(InterPlanetary File System)<sup><a href="#references">[18]</a></sup>.
 
 ![KFS Permissioned Storage](/images/tech-primer/KIP-KFS-Permissioned-Storage.png)
 
 <p align="center"> <b>Fig 18:</b> KFS - Permissioned Storage & Proxy channels for inter-channel data sharing <sup><a href="#references"></a></sup> </p>
 
-KIP initiates permissioned KFS networks by deploying a genesis node with a custom swarm key<sup><a href="#references">[o]</a></sup>. The swarm key shall be shared with other nodes that are willing to participate in the permissioned networks. Evidently, the new nodes joining the network with reference to swarm key have access to the files stored in the genesis node & the other predecessor nodes within the *swarm*.
+KIP initiates permissioned KFS networks by deploying a genesis node with a custom swarm key<sup><a href="#references">[19]</a></sup>. The swarm key shall be shared with other nodes that are willing to participate in the permissioned networks. Evidently, the new nodes joining the network with reference to swarm key have access to the files stored in the genesis node & the other predecessor nodes within the *swarm*.
 
 KIP shall also support the ability to request data via RESTful API from other swarms by bridging two or more disparate swarms, keeping the partition between swarms intact.
 
@@ -767,7 +767,7 @@ KFS is designed in an effective manner to support the persistence & operation of
 
 <p align="center"> <b>Fig 20:</b> KFS - Sharding Approach <sup><a href="#references"></a></sup> </p>
 
-This is made possible by integrating our file system with HDFS<sup><a href="#references">[o]</a></sup> at a fundamental, a highly scalable filesystem for copious amount of Big Data. The native interface is established to create, read, update & delete the information between shared between internal big data file systems and respective KFS network.  
+This is made possible by integrating our file system with HDFS<sup><a href="#references">[20]</a></sup> at a fundamental, a highly scalable filesystem for copious amount of Big Data. The native interface is established to create, read, update & delete the information between shared between internal big data file systems and respective KFS network.  
 
 ### Data interface for Apps
 
