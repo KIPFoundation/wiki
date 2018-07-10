@@ -175,7 +175,7 @@ func removePeer(Node node) {
 
 ```
 
-TARA leverages raftpb<sup><a href="#references">[6]</a></sup> (github.com/coreos/etcd/raft/raftpb) - The Protobuf<sup><a href="#references">[7]</a></sup> implementation for RAFT from CoreOS' etcd<sup><a href="#references">[8]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
+TARA leverages raftpb<sup><a href="#references">[6]</a></sup> - The Protobuf<sup><a href="#references">[7]</a></sup> implementation for RAFT from CoreOS' etcd<sup><a href="#references">[8]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
 
 ![KIP Sentinel Scalability](/images/tech-primer/KIP-Sentinel-Scalability.png)
 
@@ -805,7 +805,7 @@ We welcome any suggestions, feedbacks, and improvements to the entire system who
 
 KIP Foundation team is actively involved in releasing the first batch of codebase in Golang & Javascript according to the roadmap at the earliest.
 
-Keep tuned into these repositories for [GoLang](https://github.com/KIPFoundation/go-kips) & [Javascript](https://github.com/KIPFoundation/js-kip) implementation.
+Keep tuned into these repositories for [GoLang](https://github.com/KIPFoundation/go-kip) & [Javascript](https://github.com/KIPFoundation/js-kip) implementation.
 
 ## Acknowledgement
 
