@@ -175,7 +175,7 @@ func removePeer(Node node) {
 
 ```
 
-TARA leverages raftpb<sup><a href="#references">[6]</a></sup> (github.com/coreos/etcd/raft/raftpb) - The Protobuf<sup><a href="#references">[7]</a></sup> implementation for RAFT from CoreOS' etcd<sup><a href="#references">[8]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
+TARA leverages raftpb<sup><a href="#references">[6]</a></sup> - The Protobuf<sup><a href="#references">[7]</a></sup> implementation for RAFT from CoreOS' etcd<sup><a href="#references">[8]</a></sup> package to manage & broadcast network level changes due to addition or removal of peers.
 
 ![KIP Sentinel Scalability](/images/tech-primer/KIP-Sentinel-Scalability.png)
 
