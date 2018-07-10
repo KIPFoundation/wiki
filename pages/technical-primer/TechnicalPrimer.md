@@ -355,7 +355,7 @@ KIP facilitates high frequency enterprise operations by leveraging the reactive 
 
 The state channels hosted by the grand nodes & star nodes are facilitated by an actor concurrency model consisting of hybrid `mutex` & `chan` spaces across the network. This hybrid structure allows us to achieve concurrency without tradeoffs at the JUG(EVM<sup><a href="#references">[15]</a></sup>-like) on blocking calls needed to perform function calls. However, each node belonging to respective state channel is a member of a subset of a super-set channel, thereby maintaining systemic information on the wallets & smart contracts.  
 
-![KIP Throughput](/images/tech-primer/KIP-throughput.png)
+![KIP Throughput](/images/tech-primer/KIP-Throughput.png)
 
 <p align="center"> <b>Fig 3:</b> KIP - Actor-based throughput model with reactive streams<sup><a href="#references"></a></sup> </p>
 
@@ -688,7 +688,7 @@ KIP enables businesses to harness the integration of 3rd generation of blockchai
 
 ### JUG - The EVM++
 
-The native 3rd generation blockchain technology offered by KIP exhibits specific ability to execute all instructions and standard cryptographic & mathematical functions similar to other blockchain platforms, yet maintain the volatility in the gas cost borne by the developers and end users. More on the approaches to balancing gas costs are mentioned under [Stable gas cost](#stable-gas-cost) section of this paper.
+The native 3rd generation blockchain technology offered by KIP exhibits specific ability to execute all instructions and standard cryptographic & mathematical functions similar to other blockchain platforms, yet maintain the volatility in the gas cost borne by the developers and end users. More on the approaches to balancing gas costs are mentioned under Stable gas cost section of this paper.
 
 ![KIP JUG](/images/tech-primer/KIP-JUG.png)
 <p align="center"> <b>Fig 14:</b> KIP JUG & Blockchain <sup><a href="#references"></a></sup> </p>
@@ -718,7 +718,7 @@ Platform fee is not just the cost of computational operations but also represent
 
 KIP offers the user to select the execution tier, upon which the platform fee shall be calculated. The concept of tier-based execution is introduced to address the unnecessity involved in executing a signed transaction of relatively lower importance / asset value across the entire network. This is made possible by using KIP's state channels hosted by interested consortium members on various types of hardware(collectively called the "Tier"). The cost associated with executing the instructions among the subset of nodes forming the state channel is calculated. Similarly, the to transmit the formally verified & processed information is added to the fee.
 
-The total computed cost is transmitted back to the user for approval. In contrast to the variable balance between the `gasLimit` allowed and the `gasPrice` that can be set by the user in former, KIP understands the nature of enterprise permissioned networks in the form of superset of state channels distributed in clusters. The balance is now achieved by maintaining an inherent scale of gasPrice that can be varied against changes in the cost to maintain the hardware corresponding to respective tiers. More on the tier-based cost balancing mentioned in the [Stable Gas Cost]() section.
+The total computed cost is transmitted back to the user for approval. In contrast to the variable balance between the `gasLimit` allowed and the `gasPrice` that can be set by the user in former, KIP understands the nature of enterprise permissioned networks in the form of superset of state channels distributed in clusters. The balance is now achieved by maintaining an inherent scale of gasPrice that can be varied against changes in the cost to maintain the hardware corresponding to respective tiers. More on the tier-based cost balancing mentioned in the Stable Gas Cost section.
 
 Apart from the stable gas cost, KIP features a transparent method of fee distribution by maintaining a global incentive ledger.
 
