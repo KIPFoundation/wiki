@@ -355,7 +355,7 @@ KIP facilitates high frequency enterprise operations by leveraging the reactive 
 
 The state channels hosted by the grand nodes & star nodes are facilitated by an actor concurrency model consisting of hybrid `mutex` & `chan` spaces across the network. This hybrid structure allows us to achieve concurrency without tradeoffs at the JUG(EVM<sup><a href="#references">[15]</a></sup>-like) on blocking calls needed to perform function calls. However, each node belonging to respective state channel is a member of a subset of a super-set channel, thereby maintaining systemic information on the wallets & smart contracts.  
 
-![KIP Throughput](/images/tech-primer/KIP-throughput.png)
+![KIP Throughput](/images/tech-primer/KIP-Throughput.png)
 
 <p align="center"> <b>Fig 3:</b> KIP - Actor-based throughput model with reactive streams<sup><a href="#references"></a></sup> </p>
 
