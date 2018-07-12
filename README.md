@@ -1,5 +1,5 @@
 
-<p><a style=algin:center" href="https://kip.foundation"><img src="./images/logo.png" /></a></p>
+<p><a style=algin:center" href="https://www.kip.foundation/"><img src="./images/logo.png" /></a></p>
 
 # Wiki - Krama Intelligent Protocol (KIP)
 This is the official repository for all sorts of KIP documentation.
@@ -34,7 +34,7 @@ Once done, please go through [CONTRIBUTING.md](/CONTRIBUTING.md) and feel free t
 
 https://github.com/KIPFoundation/wiki
 
-Copyright (c) 2018 [KIP Foundation](http://kip.foundation)  
+Copyright (c) 2018 [KIP Foundation](https://www.kip.foundation/)  
 Except as noted in [USAGE](/USAGE.md), content licensed under [CC-BY-SA-4.0](/LICENSE).
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
