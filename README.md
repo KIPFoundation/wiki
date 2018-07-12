@@ -10,15 +10,15 @@ This is the official repository for all sorts of KIP documentation.
 
 [Technical Primer](/pages/technical-primer/TechnicalPrimer.md): Well explained technicalities of KIP & underlying components.
 
-[Roadmap](/pages/pm/Roadmap.md): A modest and high-level point of view on the progress by PMs and contributors.
+[Roadmap & Milestones](/pages/milestone/Milestone.md): A modest and high-level point of view on the progress by PMs and contributors.
 
-[KFS Specification Paper](/pages/kfs/kfs-specs.md): Full specification on Krama File System - The inline storage realm component of KIP to store large sums data off-chain & manage state changes cryptographically.
+[KFS Specification Paper](/pages/specs/kfs/kfs-specs.md): Full specification on Krama File System - The inline storage realm component of KIP to store large sums data off-chain & manage state changes cryptographically.
 
-[KIDE Specification Paper](/pages/kide/kide-specs.md): Full specification on Krama Integrated Development Environment - The next-gen IDE for spinning diApps quickly.
+[KIDE Specification Paper](/pages/specs/kide/kide-specs.md): Full specification on Krama Integrated Development Environment - The next-gen IDE for spinning diApps quickly.
 
-[TDU Specification Paper](/pages/tdu/tdu-specs.md): Full specification on Total Digital Utility - The multi-dimensional value persistence of collective behaviour of all actors in the system & providing means to transfer the same economically.
+[TARA Specification Paper](/pages/specs/tara/tara-specs.md): Full specification on Ternary Augmented RAFT Architecture - The distributed computational framework facilitating modulated trust & high throughput state channels.
 
-[TARA Specification Paper](/pages/tara/tara-specs.md): Full specification on Ternary Augmented RAFT Architecture - The distributed computational framework facilitating modulated trust & high throughput state channels.
+[TDU Specification Paper](/pages/specs/tdu/tdu-specs.md): Full specification on Total Digital Utility - The multi-dimensional value persistence of collective behavior of all actors in the system & providing means to transfer the same economically.
 
 ## Contribution
 
